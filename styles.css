@@ -1,0 +1,108 @@
+/************Selectors****************/
+
+p {font-size: 18px;}
+
+h1 {text-align:center;}
+
+h2 {font-family: 'Montserrat' , sans-serif;}
+
+li {
+  font-size: 18px;
+  text-align: left;
+}
+
+code {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display:block;
+}
+
+em {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  margin-left: 300px;
+  margin-right: 5px;
+  padding: 0 0 0 40px;
+  line-height: 2;
+}
+
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/***********Class Selectors************/
+
+
+.no-bull {list-style-type: none;}
+
+.square {list-style-type: square;}
+
+.nav-link {
+  border-top: 1px solid lightgray;
+  text-indent: 15px;
+}
+
+/***********Psuedo Class**************/
+
+.nav-link:hover {background-color: yellow;}
+
+
+/***********ID Selectors**************/
+
+
+#navbar {
+  height: 100%;
+  width: 300px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  overflow-x: hidden;
+  padding: 10px 0 10px 0;
+  border-right: 2px solid lightgray;
+
+}
+
+#navbar a {
+  padding: 10px 10px 10px 0;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+#data_types {border-bottom: 1px solid lightgray;}
+
+
+/*************Media Queries*************/
+
+
+@media screen and (max-width: 700px) {
+
+  #navbar {
+    height: 450px;
+    width: 100%;
+    top:0;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    border: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+  }
+
+  main {
+   text-align: center;
+    margin: auto 10px 5px 10px;
+    padding: 10px;
+  }
+
+  #navbar a {font-size: 16px;}
+
+  }
